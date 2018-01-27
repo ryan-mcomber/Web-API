@@ -3,13 +3,13 @@
 <movies>
 
   <movie>
-    <movietitle>The Dark Knight</movietitle>
+    <title>The Dark Knight</title>
     <year>2007</year>
     <genre>Action</genre>
   </movie>
 
   <actor>
-    <actorname>Christian Bale</actorname>
+    <name>Christian Bale</name>
     <DateOfBirth>1974-01-30</DateOfBirth>
   </actor>
 

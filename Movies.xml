@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 
-<movies>
-
+<movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Movies.xsd">
+	
   <movie>
     <title>The Dark Knight</title>
     <year>2007</year>

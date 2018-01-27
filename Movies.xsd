@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xs:element name = "movies">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name = "movie">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="title">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="40"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>	
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="year">
+								<xs:simpleType>
+									<xs:restriction base="xs:int">
+										<xs:minInclusive value="1940"/>
+										<xs:maxInclusive value="2018"/>
+									</xs:restriction>	
+								</xs:simpleType>					
+							</xs:element>
+							<xs:element name="genre">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Action"/>
+										<xs:enumeration value="Comedy"/>
+										<xs:enumeration value="Drama"/>
+										<xs:enumeration value="Horror"/>
+										<xs:enumeration value="Thriller"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="actor">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="40"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DateOfBirth" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

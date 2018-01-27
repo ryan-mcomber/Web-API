@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<movies>
+
+  <movie>
+    <movietitle>The Dark Knight</movietitle>
+    <year>2007</year>
+    <genre>Action</genre>
+  </movie>
+
+  <actor>
+    <actorname>Christian Bale</actorname>
+    <DateOfBirth>1/30/1974</DateOfBirth>
+  </actor>
+
+</movies>
